@@ -45,12 +45,11 @@ def display_board(board, hide_ships=False):
         # Move to the next line after printing all cells in the row
         print()
 
-# Function to validate target coordinate input
 def validate_coordinate(coordinate):
            """
     Validate the target coordinate input.
-    coordinate (str): The target coordinate to validate.
-    Returns True if the coordinate is valid, False otherwise.
+        coordinate (str): The target coordinate to validate.
+        Returns True if the coordinate is valid, False otherwise.
     """
     # Check if the coordinate has the correct length
     if len(coordinate) != 2:
@@ -65,4 +64,12 @@ def validate_coordinate(coordinate):
     # Check if the column and row values are within the board boundaries
     return 0 <= col < board_size and 0 <= row < board_size
 
+def place_ship(board, ship_name, ship_size):
+    """
+    Places a ship on the board with input validation.
+        board (list): The game board to place the ship on.
+        ship_name (str): The name of the ship.
+        ship_size (int): The size of the ship.
+    """
+    print(f'Placing {ship_name} ({ship_size} cells)')
    
