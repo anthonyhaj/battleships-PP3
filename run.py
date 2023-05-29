@@ -52,3 +52,13 @@ def validate_coordinate(coordinate):
     coordinate (str): The target coordinate to validate.
     Returns True if the coordinate is valid, False otherwise.
     """
+    if len(coordinate) != 2:
+        return False
+
+    col = ord(coordinate[0]) - ord('A')
+    try:
+        row = int(coordinate[1:]) - 1
+    except ValueError:
+        return False
+
+    return 0 <= col < board_size and 0 <= row < board_size
