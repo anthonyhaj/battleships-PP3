@@ -1,5 +1,8 @@
 # BattleShips Game
 
+# Imports
+import random
+
 # Game board size
 board_size = 10
 
