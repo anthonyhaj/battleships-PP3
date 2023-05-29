@@ -131,4 +131,33 @@ def random_place_ship(board, ship_name, ship_size):
                     board[row+i][col] = ship_cell
                 break
 
+def player_turn():
+    """
+    Performs the player's turn.
+        Returns: True if the player hit a ship, False otherwise.
+    """
+    # Gets the target coordinate from the player
+    while True:
+        target = input('Enter target coordinate (e.g., A1): ').upper()
 
+        # Validates the target coordinate
+        if validate_coordinate(target):
+            col = ord(target[0]) - ord('A')
+            row = int(target[1:]) - 1
+
+            # Checks if the player hit a ship
+            if computer_board[row][col] == ship_cell:
+                print('Hit!')
+                computer_board[row][col] = hit_cell
+                return True
+            # Check if the player missed
+            elif computer_board[row][col] == empty_cell:
+                print('Miss!')
+                computer_board[row][col] = miss_cell
+                return False
+            else:
+                print('You already targeted this cell.')
+        else:
+            print('Invalid target. Please enter a valid coordinate.')
+
+            
