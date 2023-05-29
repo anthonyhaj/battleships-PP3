@@ -105,4 +105,30 @@ def place_ship(board, ship_name, ship_size):
         else:
             print('Invalid placement. Ship goes out of bounds.')
 
+def random_place_ship(board, ship_name, ship_size):
+    """
+    Randomly place a ship for the computer-controlled opponent.
+        board (list): The game board to place the ship on.
+        ship_name (str): The name of the ship.
+        ship_size (int): The size of the ship.
+    """
+    # Generates random coordinates and direction
+    while True:
+        col = random.randint(0, board_size - 1)
+        row = random.randint(0, board_size - 1)
+        direction = random.choice(['H', 'V'])
+
+        # Validates horizontal ship placement
+        if direction == 'H' and col + ship_size <= board_size:
+            if all(board[row][col+i] == empty_cell for i in range(ship_size)):
+                for i in range(ship_size):
+                    board[row][col+i] = ship_cell
+                break
+        # Validates vertical ship placement
+        elif direction == 'V' and row + ship_size <= board_size:
+            if all(board[row+i][col] == empty_cell for i in range(ship_size)):
+                for i in range(ship_size):
+                    board[row+i][col] = ship_cell
+                break
+
 
