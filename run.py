@@ -51,17 +51,17 @@ def validate_coordinate(coordinate):
         coordinate (str): The target coordinate to validate.
         Returns True if the coordinate is valid, False otherwise.
     """
-    # Check if the coordinate has the correct length
+    # Checks if the coordinate has the correct length
     if len(coordinate) != 2:
         return False
-    # Extract the column and row values from the coordinate
+    # Extracts the column and row values from the coordinate
     col = ord(coordinate[0]) - ord('A')
     try:
         row = int(coordinate[1:]) - 1
     except ValueError:
         # If the row value is not a valid integer, the coordinate is invalid
         return False
-    # Check if the column and row values are within the board boundaries
+    # Checks if the column and row values are within the board boundaries
     return 0 <= col < board_size and 0 <= row < board_size
 
 def place_ship(board, ship_name, ship_size):
@@ -72,4 +72,37 @@ def place_ship(board, ship_name, ship_size):
         ship_size (int): The size of the ship.
     """
     print(f'Placing {ship_name} ({ship_size} cells)')
-   
+    # Gets the starting coordinate from the user
+    while True:
+        coords = input('Enter starting coordinate (e.g., A1): ').upper()
+        # Validates the coordinate
+        if not validate_coordinate(coords):
+            print('Invalid coordinate. Please enter a valid starting coordinate.')
+            continue
+        # Gets the direction from the user
+        direction = input('Enter direction (H for horizontal, V for vertical): ').upper()
+
+        col = ord(coords[0]) - ord('A')
+        row = int(coords[1:]) - 1
+        # Checks if the horizontal placement is valid
+        if direction == 'H' and col + ship_size <= board_size:
+            if all(board[row][col+i] == empty_cell for i in range(ship_size)):
+                # Places the ship horizontally on the board
+                for i in range(ship_size):
+                    board[row][col+i] = ship_cell
+                break
+            else:
+                print('Invalid placement. Ships overlap.')
+        # Checks if the vertical placement is valid        
+        elif direction == 'V' and row + ship_size <= board_size:
+            if all(board[row+i][col] == empty_cell for i in range(ship_size)):
+                # Places the ship vertically on the board
+                for i in range(ship_size):
+                    board[row+i][col] = ship_cell
+                break
+            else:
+                print('Invalid placement. Ships overlap.')
+        else:
+            print('Invalid placement. Ship goes out of bounds.')
+
+
