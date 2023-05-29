@@ -44,3 +44,11 @@ def display_board(board, hide_ships=False):
                 print(cell + ' ', end='')
         # Move to the next line after printing all cells in the row
         print()
+
+# Function to validate target coordinate input
+def validate_coordinate(coordinate):
+           """
+    Validate the target coordinate input.
+    coordinate (str): The target coordinate to validate.
+    Returns True if the coordinate is valid, False otherwise.
+    """
