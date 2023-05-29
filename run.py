@@ -12,3 +12,5 @@ ship_cell = 'O'
 hit_cell = 'X'
 miss_cell = '-'
 
+# Ship sizes 
+ship_sizes = {'Carrier': 5, 'Battleship': 4, 'Cruiser': 3, 'Submarine': 3, 'Destroyer': 2}
