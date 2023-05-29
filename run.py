@@ -25,11 +25,15 @@ def display_board(board, hide_ships=False):
         Displays the game board.
         hide_ships: Whether to hide the ships on the board.
     """
+    # Print column labels
     print('   ' + ' '.join(chr(ord('A') + i) for i in range(board_size)))
     for row in range(board_size):
+        # Print row number
         print(f'{row + 1:2d} ', end='')
+        # Iterate over columns
         for col in range(board_size):
             cell = board[row][col]
+            # Print cell contents based on its value
             if cell == hit_cell or cell == miss_cell:
                 print(cell + ' ', end='')
             elif cell == empty_cell:
@@ -38,4 +42,5 @@ def display_board(board, hide_ships=False):
                 print(empty_cell + ' ', end='')
             else:
                 print(cell + ' ', end='')
+        # Move to the next line after printing all cells in the row
         print()
