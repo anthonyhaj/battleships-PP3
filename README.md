@@ -373,3 +373,9 @@ or "H" for horizontal.
 2. Click on Fork button located in the top right corner
 3. [GitHub Repository](https://github.com/anthonyhaj/battleships-PP3)
 
+### Local Repository Cloning
+1. Go to the GitHub repository
+2. Click on Code button above all files
+3. Copy HTTPS link to clone
+4. On git bash change current directory to desired clone directory
+5. Type git clone and paste URL and press enter
