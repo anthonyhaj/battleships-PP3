@@ -122,7 +122,12 @@ or "H" for horizontal.
 - I want to be able to see the opponents board
 - I want to be able to play again
 
-
+### Site Owner
+- I want users to be able to enter correct coordinates
+- I want users to be able to see which cells have been used or hit
+- I want users to know how coordinates should be entered and validated
+- I want users to be able to choose if they would like to play
+- I want users to choose if they would like to play again
 
 
 
