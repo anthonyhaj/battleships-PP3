@@ -230,7 +230,7 @@ while True:
     player_hits = 0
     computer_hits = 0
 
-    # Game loop
+    # Main game loop
     while True:
         print('\nPlayer Board')
         display_board(player_board, hide_ships=False)

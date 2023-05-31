@@ -21,7 +21,6 @@
     - [Language used](#language-used)
     -[Python Libraries used](#python-libraries-used)
     - [Other websites/tools used](#other-websitestools-used)
-    - [3rd Party Python Libraries used](#3rd-party-python-libraries-used)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features to be implemented](#features-to-be-implemented)
@@ -58,7 +57,7 @@
 ## User Experience
 
 ### Target Audience
-- No specific target audienc
+- No specific target audience
 - Anyone who enjoys to play battleships
 
 ### User Requirements and Expectations
@@ -141,9 +140,6 @@ or "H" for horizontal.
 - [GitPod](https://www.gitpod.io/)
 - [Heroku](https://www.heroku.com/)
 - [Pycharm](https://www.jetbrains.com/pycharm/)
-
-### 3rd Party Python Libraries used
-
 
 ## Features
 
@@ -319,7 +315,7 @@ or "H" for horizontal.
 
 <details>
     <summary>Validator run.py</summary>
-    <img src="assets/screenshots/play-again.png">
+    <img src="assets/screenshots/pep8-validation.png">
 </details> 
 
 ### Bugs and Fixes
