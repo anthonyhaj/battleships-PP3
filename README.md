@@ -76,6 +76,14 @@
 - User must enter y/n
 - Any other unput prompt user to try again
 
+#### Placing battleships
+- Player starts out with 5 ships (Carrier: 5 cells, Battleship: 4 cells, Cruiser: 3 cells, Submarine: 3 cells, Destroyer: 2 cells)
+- When game starts it will prompt user to enter a coordinate to place ships
+- Once a player has chosen a coordinate, the prompt will ask if player would like placement to be "V" for vertical
+or "H" for horizontal.
+- Computer battleships will be placed randomly
+
+
 
 
 
