@@ -135,6 +135,12 @@ or "H" for horizontal.
 ### Python Libraries used
 - random 
 
+### Websites and tools
+- [GitHub](https://github.com/)
+- [GitPod](https://www.gitpod.io/)
+- [Heroku](https://www.heroku.com/)
+- [Pycharm](https://www.jetbrains.com/pycharm/)
+
 
 
 
