@@ -12,8 +12,11 @@ ship_cell = 'O'
 hit_cell = 'X'
 miss_cell = '-'
 
-# Ship sizes 
-ship_sizes = {'Carrier': 5, 'Battleship': 4, 'Cruiser': 3, 'Submarine': 3, 'Destroyer': 2}
+ship_sizes = {'Carrier': 5,
+              'Battleship': 4,
+              'Cruiser': 3,
+              'Submarine': 3,
+              'Destroyer': 2}
 
 # Initialize the game boards for player and computer
 player_board = [[empty_cell] * board_size for _ in range(board_size)]

@@ -301,3 +301,15 @@ or "H" for horizontal.
     <summary>Play again screenshot</summary>
     <img src="assets/screenshots/play-again.png">
 </details> 
+
+### Tested Devices with Browsers
+- iPhone 12 Pro
+- iPad Mini
+- Lenovo thinkpad (PC)
+    - Microsoft edge 
+    - Chrome
+
+### Validator Testing
+
+#### PEP8 Python Validator
+
