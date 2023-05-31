@@ -67,6 +67,15 @@
 - Expect to see if player move has hit the desired target
 - Expect to see computer move 
 
+### User Manual
+<details><summary>Click here to view instructions</summary>
+
+#### Welcome to game
+
+- Once game is started up asks user if they would like to play
+- User must enter y/n
+- Any other unput prompt user to try again
+
 
 
 
