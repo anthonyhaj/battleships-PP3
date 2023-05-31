@@ -24,7 +24,7 @@
     - [Existing Features](#existing-features)
     - [Features to be implemented](#features-to-be-implemented)
 - [Testing](#testing)
-    - [Manual Testing](#manual-testing)
+    - [User Stories Testing](#user-stories-testing)
     - [Tested Devices with Browsers](#tested-devices-with-browsers)
     - [Validator Testing](#validator-testing)
     - [Bugs and Fixes](#bugs-and-fixes)
@@ -124,8 +124,7 @@ or "H" for horizontal.
 - I want users to be able to enter correct coordinates
 - I want users to be able to see which cells have been used or hit
 - I want users to know how coordinates should be entered and validated
-- I want users to be able to choose if they would like to play
-- I want users to choose if they would like to play again
+- I want users to be able to choose if they would like to start playing
 
 ## Technologies Used
 
@@ -194,9 +193,24 @@ or "H" for horizontal.
     <img src="assets/screenshots/game-end.png">
 </details> 
 
+## Testing
+- Testing of user stories
+- Testing validation
+- Browser Testing
+- Mobile Testing
 
+### Manual User Stories Testing
 
+1. Be able to choose if user would like to play
 
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Would you like to play | Type Y/N | Y: Starts game / N: Maybe next time! | Works as expected
+
+<details>
+    <summary>Would you like to play screenshot</summary>
+    <img src="assets/screenshots/welcome.png">
+</details> 
 
 
 
