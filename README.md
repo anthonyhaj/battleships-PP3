@@ -155,6 +155,26 @@ or "H" for horizontal.
     <img src="assets/screenshots/welcome.png">
 </details>  
 
+### Ship placement
+- Prompts user to enter a starting coordinate for each ship
+- Promts user to choose a vertical or horizontal position
+- Player board shows chosen ship placement areas
+
+<details>
+    <summary>Game start screenshot</summary>
+    <img src="assets/screenshots/game-start.png">
+</details>  
+
+<details>
+    <summary>Game start chosen cells</summary>
+    <img src="assets/screenshots/game-start-2.png">
+</details> 
+
+
+
+
+
+
 
 
 
