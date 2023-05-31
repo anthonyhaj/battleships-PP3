@@ -311,8 +311,6 @@ or "H" for horizontal.
 
 ### Validator Testing
 
-#### PEP8 Python Validator
-
 [PEP8 Python Validator](https://pep8ci.herokuapp.com/) was used to validate the code.
 
 - No errors found in code
@@ -321,4 +319,15 @@ or "H" for horizontal.
     <summary>Validator run.py</summary>
     <img src="assets/screenshots/play-again.png">
 </details> 
+
+### Bugs and Fixes
+
+| **Bugs** | **Fixes** |
+| ------- | ------- |
+| User unable to target certain cells (A10, B10, C10, E10, F10, G10, H10, I10, J10) | Modified the validation function validate_coordinate to handle the special case of coordinates ending with "10" correctly|
+| Computer-controlled opponent hits the same target multiple times | Modified the computer_turn function to generate random coordinates until an untargeted cell is found|
+| Missing validation for the target coordinate input | Implemented the validate_coordinate function to validate the target coordinate input for both the player and computer-controlled opponent's turns. It ensures that the entered coordinate is in the correct format and within the valid range|
+
+
+
 
