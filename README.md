@@ -185,7 +185,14 @@ or "H" for horizontal.
     <img src="assets/screenshots/player-board.png">
 </details> 
 
+### Restart Game
+- Displays winner after all battleships have sunk
+- Prompts user to choose to play again or not
 
+<details>
+    <summary>Game ending screenshot</summary>
+    <img src="assets/screenshots/game-end.png">
+</details> 
 
 
 
