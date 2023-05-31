@@ -50,5 +50,9 @@
 
 ### Site Owner Goals
 - To make a game that is easy to understand
-- To 
+- To ask the user if they would like to play the game
+- To make sure user can place ships on valid targets
+- To make sure user can only attack on valid parts of the game grid
+- To give the user a choice to play again
+
 
