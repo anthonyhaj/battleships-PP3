@@ -343,3 +343,28 @@ or "H" for horizontal.
     <summary>Buildpacks screenshot</summary>
     <img src="assets/deployment/buildpacks.png">
 </details> 
+
+8. Open the deploy tab
+9. Connect to Github account on the "Deployment method" section
+10. On the "Connect to Github" section choose the deployment repo and click connect
+
+<details>
+    <summary>Search repo screenshot</summary>
+    <img src="assets/deployment/connect.png">
+</details> 
+
+11. Choose a method to deploy repo
+
+<details>
+    <summary>Deployment method screenshot</summary>
+    <img src="assets/deployment/deploy.png">
+</details> 
+
+12. Click on "Deploy branch" and wait for a view button to appear
+13. Click on view to open deployed webpage
+
+<details>
+    <summary>Deployment view screenshot</summary>
+    <img src="assets/deployment/deploy-2.png">
+</details> 
+
