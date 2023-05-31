@@ -245,4 +245,13 @@ or "H" for horizontal.
     <img src="assets/screenshots/play-again.png">
 </details> 
 
-5. 
+5. I want users to be able to enter correct coordinates
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Coordinate validation | Type coordinate (e.g A10) | Invalid target. Please try again | Works as expected
+
+<details>
+    <summary>Play again screenshot</summary>
+    <img src="assets/screenshots/invalid.png">
+</details> 
