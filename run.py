@@ -51,18 +51,25 @@ def validate_coordinate(coordinate):
         coordinate (str): The target coordinate to validate.
         Returns True if the coordinate is valid, False otherwise.
     """
-    # Checks if the coordinate has the correct length
-    if len(coordinate) != 2:
+    # Check the length of the coordinate
+    if len(coordinate) < 2 or len(coordinate) > 3:
         return False
-    # Extracts the column and row values from the coordinate
+    # Extract the column and row values from the coordinate
     col = ord(coordinate[0]) - ord('A')
     try:
-        row = int(coordinate[1:]) - 1
+        row = int(coordinate[1:])
     except ValueError:
-        # If the row value is not a valid integer, the coordinate is invalid
         return False
-    # Checks if the column and row values are within the board boundaries
-    return 0 <= col < board_size and 0 <= row < board_size
+    # Validate the row based on the coordinate length
+    if len(coordinate) == 3:
+        # For coordinates with three characters (e.g., 'A10')
+        if coordinate[1] != '1' or coordinate[2] != '0':
+            return False
+    else:
+        if row < 1 or row > 10:
+            return False
+    # For coordinates with two characters (e.g., 'A1' to 'J9')
+    return 0 <= col < board_size and 0 <= row - 1 < board_size
 
 def place_ship(board, ship_name, ship_size):
     """
