@@ -81,7 +81,8 @@
 - When game starts it will prompt user to enter a coordinate to place ships
 - Once a player has chosen a coordinate, the prompt will ask if player would like placement to be "V" for vertical
 or "H" for horizontal.
-- Computer battleships will be placed randomly
+- Areas where the player battleships are place are marked with 'O'
+- Computer battleships will be placed randomly and are hidden from the player
 
 #### Player turn
 - Once all player battleships have been placed, the game begins
@@ -89,6 +90,17 @@ or "H" for horizontal.
 - If the player enters anything other than a coordinate they will prompted to try again
 - If a player misses a computer battleship they will see a message saying "Miss!"
 - If a player hits a computer battleship they will see a message saying "Hit!"
+- Areas where the player has missed will be marked with '-' and hits marked with 'X' on the board
+- If a player chooses an already chosen coordinate they will receive a message saying 
+"You already targeted this cell." and prompting a user to enter another coordinate
+
+#### Computer turn
+- Once a player has chosen a coordinate to attack the computer will also choose a coordinate
+- Underneath the computer board the player will see if the computer has missed or hit a target 
+- Underneath the computer move showing where the computer has hit on their board
+- If a computer has missed a coordinate, it will be marked with '-'
+- If a computer has hit a coordinate, it will be marked with 'X' 
+
 
 
 
