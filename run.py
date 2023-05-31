@@ -160,4 +160,23 @@ def player_turn():
         else:
             print('Invalid target. Please enter a valid coordinate.')
 
-            
+def computer_turn():
+    """
+    Perform the computer-controlled opponent's turn.
+        Returns: True if the computer hit a ship, False otherwise.
+    """
+    # Generates random target coordinates
+    while True:
+        col = random.randint(0, board_size - 1)
+        row = random.randint(0, board_size - 1)
+        # Check if the computer hit a ship
+        if player_board[row][col] == ship_cell:
+            print('Computer hit your ship!')
+            player_board[row][col] = hit_cell
+            return True
+        # Check if the computer missed
+        elif player_board[row][col] == empty_cell:
+            print('Computer missed!')
+            player_board[row][col] = miss_cell
+            return False
+
