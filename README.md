@@ -115,16 +115,16 @@ or "H" for horizontal.
 ## User Stories
 
 ### Users
-- I want to be able to choose where to put my battleships
-- I want to be able to see my game board and ships
-- I want to be able to see the opponents board
-- I want to be able to play again
+1. I want to be able to choose where to put my battleships
+2. I want to be able to see my game board and ships
+3. I want to be able to see the opponents board
+4. I want to be able to play again
 
 ### Site Owner
-- I want users to be able to enter correct coordinates
-- I want users to be able to see which cells have been used or hit
-- I want users to know how coordinates should be entered and validated
-- I want users to be able to choose if they would like to start playing
+5. I want users to be able to enter correct coordinates
+6. I want users to be able to see which cells have been used or hit
+7. I want users to know how coordinates should be entered and validated
+8. I want users to be able to choose if they would like to start playing
 
 ## Technologies Used
 
@@ -221,4 +221,15 @@ or "H" for horizontal.
 <details>
     <summary>Player board screenshot</summary>
     <img src="assets/screenshots/player-board-2.png">
+</details> 
+
+3. I want to be able to see the opponents board
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Computer game board | Type coordinate (e.g A10) | 'X' showing hit / '-' showing miss | Works as expected
+
+<details>
+    <summary>Computer board screenshot</summary>
+    <img src="assets/screenshots/computer-board-2.png">
 </details> 
