@@ -223,28 +223,45 @@ while True:
     player_hits = 0
     computer_hits = 0
 
-# Main game loop
-while True:
-    print('\nPlayer Board')
-    display_board(player_board, hide_ships=False)
+    # Game loop
+    while True:
+        print('\nPlayer Board')
+        display_board(player_board, hide_ships=False)
 
-    print('\nPlayer Turn')
-    player_hit = player_turn()
-    if player_hit:
-        player_hits += 1
+        print('\nPlayer Turn')
+        player_hit = player_turn()
+        if player_hit:
+            player_hits += 1
 
-    if player_hits == sum(ship_sizes.values()) * 2:
-        print('Congratulations! You sank all the computer\'s ships.')
-        break
+        if player_hits == sum(ship_sizes.values()):
+            print('Congratulations! You sank all the computer\'s ships.')
+            break
 
-    print('\nComputer Board')
-    display_board(computer_board, hide_ships=True)
+        print('\nComputer Board')
+        display_board(computer_board, hide_ships=True)
 
-    print('\nComputer Turn')
-    computer_hit = computer_turn()
-    if computer_hit:
-        computer_hits += 1
+        print('\nComputer Turn')
+        computer_hit = computer_turn()
+        if computer_hit:
+            computer_hits += 1
 
-    if computer_hits == sum(ship_sizes.values()) * 2:
-        print('Game Over! The computer sank all your ships.')
-        break
+        if computer_hits == sum(ship_sizes.values()):
+            print('Game Over! The computer sank all your ships.')
+            break
+
+    while True:
+        play_again = input("Do you want to play again? (Y/N): ")
+        play_again = play_again.upper()
+
+        if play_again == 'Y':
+            # Reset the game
+            print("Let's play again!")
+            player_board = [[empty_cell] * board_size for _ in range(board_size)]
+            computer_board = [[empty_cell] * board_size for _ in range(board_size)]
+            break
+        elif play_again == 'N':
+            # Exit the game
+            print("Thank you for playing!")
+            exit()
+        else:
+            print("Invalid input. Please enter 'Y' or 'N'.")
