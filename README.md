@@ -55,4 +55,11 @@
 - To make sure user can only attack on valid parts of the game grid
 - To give the user a choice to play again
 
+## User Experience
+
+### Target Audience
+- No specific target audienc
+- Anyone who enjoys to play battleships
+
+
 
