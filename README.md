@@ -15,9 +15,7 @@
 - [User Stories](#user-stories)
     - [Users](#users)
     - [Site Owner](#site-owner)
-- [Teachnical Design](#technical-design)
-    - [Flowchart](#flowchart)
-- [Technology Used](#technology-used)
+- [Technologies Used](#technology-used)
     - [Language used](#language-used)
     -[Python Libraries used](#python-libraries-used)
     - [Other websites/tools used](#other-websitestools-used)
@@ -128,6 +126,16 @@ or "H" for horizontal.
 - I want users to know how coordinates should be entered and validated
 - I want users to be able to choose if they would like to play
 - I want users to choose if they would like to play again
+
+## Technologies Used
+
+### Languages Used
+- Python
+
+### Python Libraries used
+- random 
+
+
 
 
 
