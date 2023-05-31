@@ -180,3 +180,8 @@ def computer_turn():
             player_board[row][col] = miss_cell
             return False
 
+# Place ships on the player's board
+for ship_name, ship_size in ship_sizes.items():
+    display_board(player_board)
+    place_ship(player_board, ship_name, ship_size)
+
