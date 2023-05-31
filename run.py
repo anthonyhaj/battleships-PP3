@@ -192,3 +192,29 @@ for ship_name, ship_size in ship_sizes.items():
 # Initializes hit counters
 player_hits = 0
 computer_hits = 0
+
+# Game loop
+while True:
+    print('\nPlayer Board')
+    display_board(player_board, hide_ships=False)
+
+    print('\nPlayer Turn')
+    player_hit = player_turn()
+    if player_hit:
+        player_hits += 1
+
+    if player_hits == sum(ship_sizes.values()) * 2:
+        print('Congratulations! You sank all the computer\'s ships.')
+        break
+
+    print('\nComputer Board')
+    display_board(computer_board, hide_ships=True)
+
+    print('\nComputer Turn')
+    computer_hit = computer_turn()
+    if computer_hit:
+        computer_hits += 1
+
+    if computer_hits == sum(ship_sizes.values()) * 2:
+        print('Game Over! The computer sank all your ships.')
+        break
