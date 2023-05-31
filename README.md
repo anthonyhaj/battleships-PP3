@@ -61,5 +61,13 @@
 - No specific target audienc
 - Anyone who enjoys to play battleships
 
+### User Requirements and Expectations
+- No requirements to play
+- Expect to see both the player board and computer board 
+- Expect to see if player move has hit the desired target
+- Expect to see computer move 
+
+
+
 
 
