@@ -313,3 +313,12 @@ or "H" for horizontal.
 
 #### PEP8 Python Validator
 
+[PEP8 Python Validator](https://pep8ci.herokuapp.com/) was used to validate the code.
+
+- No errors found in code
+
+<details>
+    <summary>Validator run.py</summary>
+    <img src="assets/screenshots/play-again.png">
+</details> 
+
