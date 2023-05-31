@@ -233,3 +233,16 @@ or "H" for horizontal.
     <summary>Computer board screenshot</summary>
     <img src="assets/screenshots/computer-board-2.png">
 </details> 
+
+4. I want to be able to play again
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Would you like to play again | Type Y/N | Y: resets game / N: Thank you for playing! | Works as expected
+
+<details>
+    <summary>Play again screenshot</summary>
+    <img src="assets/screenshots/play-again.png">
+</details> 
+
+5. 
