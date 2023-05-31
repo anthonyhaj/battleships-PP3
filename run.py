@@ -46,10 +46,10 @@ def display_board(board, hide_ships=False):
         print()
 
 def validate_coordinate(coordinate):
-           """
+    """
     Validate the target coordinate input.
-        coordinate (str): The target coordinate to validate.
-        Returns True if the coordinate is valid, False otherwise.
+    coordinate (str): The target coordinate to validate.
+    Returns: True if the coordinate is valid, False otherwise.
     """
     # Check the length of the coordinate
     if len(coordinate) < 2 or len(coordinate) > 3:
@@ -65,10 +65,11 @@ def validate_coordinate(coordinate):
         # For coordinates with three characters (e.g., 'A10')
         if coordinate[1] != '1' or coordinate[2] != '0':
             return False
+    # For coordinates with two characters (e.g., 'A1' to 'J9')
     else:
         if row < 1 or row > 10:
             return False
-    # For coordinates with two characters (e.g., 'A1' to 'J9')
+    # Validate the column and row indices within the board size
     return 0 <= col < board_size and 0 <= row - 1 < board_size
 
 def place_ship(board, ship_name, ship_size):
