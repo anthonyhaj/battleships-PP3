@@ -212,6 +212,13 @@ or "H" for horizontal.
     <img src="assets/screenshots/welcome.png">
 </details> 
 
+2. Be able to see where a user has placed their battleships
 
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Player game board | Type coordinate (e.g A10) | 'O' showing ship placement area | Works as expected
 
-
+<details>
+    <summary>Player board screenshot</summary>
+    <img src="assets/screenshots/player-board-2.png">
+</details> 
