@@ -83,6 +83,14 @@
 or "H" for horizontal.
 - Computer battleships will be placed randomly
 
+#### Player turn
+- Once all player battleships have been placed, the game begins
+- Player will be asked to choose a coordinate to attack (e.g A1)
+- If the player enters anything other than a coordinate they will prompted to try again
+- If a player misses a computer battleship they will see a message saying "Miss!"
+- If a player hits a computer battleship they will see a message saying "Hit!"
+
+
 
 
 
