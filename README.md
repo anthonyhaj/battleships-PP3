@@ -101,6 +101,11 @@ or "H" for horizontal.
 - If a computer has missed a coordinate, it will be marked with '-'
 - If a computer has hit a coordinate, it will be marked with 'X' 
 
+#### Win or lose
+- Once a player has hit all the computer battleship cells they will recieve the message 
+"Congratulations! You sank all the computer's ships."
+- If the computer hits all players battleship cells they will revieve the message 
+"Game Over! The computer sank all your ships."
 
 
 
