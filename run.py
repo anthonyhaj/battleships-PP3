@@ -145,7 +145,7 @@ def player_turn():
             col = ord(target[0]) - ord('A')
             row = int(target[1:]) - 1
 
-            # Checks if the player hit a ship
+            # Check if the player hit a ship
             if computer_board[row][col] == ship_cell:
                 print('Hit!')
                 computer_board[row][col] = hit_cell
@@ -189,3 +189,6 @@ for ship_name, ship_size in ship_sizes.items():
 for ship_name, ship_size in ship_sizes.items():
     random_place_ship(computer_board, ship_name, ship_size)
 
+# Initializes hit counters
+player_hits = 0
+computer_hits = 0
