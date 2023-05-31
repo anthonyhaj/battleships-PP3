@@ -1,7 +1,7 @@
 # BattleShips Game
 
 # Imports
-import random 
+import random
 
 # Game board size
 board_size = 10
@@ -21,6 +21,7 @@ ship_sizes = {'Carrier': 5,
 # Initialize the game boards for player and computer
 player_board = [[empty_cell] * board_size for _ in range(board_size)]
 computer_board = [[empty_cell] * board_size for _ in range(board_size)]
+
 
 # Function to display the game board
 def display_board(board, hide_ships=False):
@@ -47,6 +48,7 @@ def display_board(board, hide_ships=False):
                 print(cell + ' ', end='')
         # Move to the next line after printing all cells in the row
         print()
+
 
 def validate_coordinate(coordinate):
     """
@@ -75,6 +77,7 @@ def validate_coordinate(coordinate):
     # Validate the column and row indices within the board size
     return 0 <= col < board_size and 0 <= row - 1 < board_size
 
+
 def place_ship(board, ship_name, ship_size):
     """
     Places a ship on the board with input validation.
@@ -88,10 +91,12 @@ def place_ship(board, ship_name, ship_size):
         coords = input('Enter starting coordinate (e.g., A1): ').upper()
         # Validates the coordinate
         if not validate_coordinate(coords):
-            print('Invalid coordinate. Please enter a valid starting coordinate.')
+            print('Invalid coordinate. '
+                  'Please enter a valid starting coordinate.')
             continue
         # Gets the direction from the user
-        direction = input('Enter direction (H for horizontal, V for vertical): ').upper()
+        prompt = 'Enter direction (H for horizontal, V for vertical): '
+        direction = input(prompt).upper()
 
         col = ord(coords[0]) - ord('A')
         row = int(coords[1:]) - 1
@@ -104,7 +109,7 @@ def place_ship(board, ship_name, ship_size):
                 break
             else:
                 print('Invalid placement. Ships overlap.')
-        # Checks if the vertical placement is valid        
+        # Checks if the vertical placement is valid
         elif direction == 'V' and row + ship_size <= board_size:
             if all(board[row+i][col] == empty_cell for i in range(ship_size)):
                 # Places the ship vertically on the board
@@ -115,6 +120,7 @@ def place_ship(board, ship_name, ship_size):
                 print('Invalid placement. Ships overlap.')
         else:
             print('Invalid placement. Ship goes out of bounds.')
+
 
 def random_place_ship(board, ship_name, ship_size):
     """
@@ -141,6 +147,7 @@ def random_place_ship(board, ship_name, ship_size):
                 for i in range(ship_size):
                     board[row+i][col] = ship_cell
                 break
+
 
 def player_turn():
     """
@@ -171,6 +178,7 @@ def player_turn():
         else:
             print('Invalid target. Please enter a valid coordinate.')
 
+
 def computer_turn():
     """
     Perform the computer-controlled opponent's turn.
@@ -190,6 +198,7 @@ def computer_turn():
             print('Computer missed!')
             player_board[row][col] = miss_cell
             return False
+
 
 # Welcome message and play prompt
 print("Welcome to Battleship Game!")
@@ -254,8 +263,10 @@ while True:
         if play_again == 'Y':
             # Reset the game
             print("Let's play again!")
-            player_board = [[empty_cell] * board_size for _ in range(board_size)]
-            computer_board = [[empty_cell] * board_size for _ in range(board_size)]
+            player_board = [[empty_cell] * board_size
+                            for _ in range(board_size)]
+            computer_board = [[empty_cell] * board_size
+                              for _ in range(board_size)]
             break
         elif play_again == 'N':
             # Exit the game
