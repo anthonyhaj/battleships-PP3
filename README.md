@@ -115,16 +115,16 @@ or "H" for horizontal.
 ## User Stories
 
 ### Users
-1. I want to be able to choose where to put my battleships
-2. I want to be able to see my game board and ships
+1. I want to be able to choose if user would like to play
+2. I want to be able to see where a user has placed their battleships
 3. I want to be able to see the opponents board
-4. I want to be able to play again
+4. I want to make sure user can place ships on valid targets
 
 ### Site Owner
 5. I want users to be able to enter correct coordinates
-6. I want users to be able to know when they have used the name coordinate
-7. I want users to know how coordinates should be entered and validated
-8. I want users to be able to choose if they would like to start playing
+6. I want users to be able to know when they have used the same coordinate
+7. I want users to know if they have hit or missed their target
+8. I want to be able to play again
 
 ## Technologies Used
 
@@ -203,6 +203,7 @@ or "H" for horizontal.
 
 1. Be able to choose if user would like to play
 
+
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
 | Would you like to play | Type Y/N | Y: Starts game / N: Maybe next time! | Works as expected
@@ -214,6 +215,7 @@ or "H" for horizontal.
 
 2. Be able to see where a user has placed their battleships
 
+
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
 | Player game board | Type coordinate (e.g A10) | 'O' showing ship placement area | Works as expected
@@ -222,6 +224,7 @@ or "H" for horizontal.
     <summary>Player board screenshot</summary>
     <img src="assets/screenshots/player-board-2.png">
 </details> 
+
 
 3. I want to be able to see the opponents board
 
@@ -234,16 +237,18 @@ or "H" for horizontal.
     <img src="assets/screenshots/computer-board-2.png">
 </details> 
 
-4. I want to be able to play again
+
+4. I want to make sure user can place ships on valid targets
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Would you like to play again | Type Y/N | Y: resets game / N: Thank you for playing! | Works as expected
+| Coordinate validation | Type invalid coordinate (e.g J5, H) | Ship goes out of bounds | Works as expected
 
 <details>
-    <summary>Play again screenshot</summary>
-    <img src="assets/screenshots/play-again.png">
+    <summary>Out of bounds screenshot</summary>
+    <img src="assets/screenshots/bounds.png">
 </details> 
+
 
 5. I want users to be able to enter correct coordinates
 
@@ -256,13 +261,33 @@ or "H" for horizontal.
     <img src="assets/screenshots/invalid.png">
 </details> 
 
-6. I want users to be able to know when they have used the name coordinate
+
+6. I want users to be able to know when they have used the same coordinate
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Coordinate validation | Type coordinate (e.g A10) | You already targeted this cell | Works as expected
+| Coordinate reuse validation | Type coordinate (e.g A10) | You already targeted this cell | Works as expected
 
 <details>
     <summary>You already targeted this cell screenshot</summary>
     <img src="assets/screenshots/used.png">
 </details>  
+
+
+7. I want users to know if they have hit or missed their target
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Hit! or Miss! | Type coordinate (e.g A10) | "Hit!" or "Miss!" message after player move | Works as expected
+
+<details>
+    <summary>Hit screenshot</summary>
+    <img src="assets/screenshots/hit.png">
+</details>  
+
+<details>
+    <summary>Miss screenshot</summary>
+    <img src="assets/screenshots/miss.png">
+</details>  
+
+
