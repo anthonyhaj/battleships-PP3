@@ -210,13 +210,18 @@ while True:
     else:
         print("Invalid input. Please enter 'Y' or 'N'.")
 
-# Place ships on the computer's board
-for ship_name, ship_size in ship_sizes.items():
-    random_place_ship(computer_board, ship_name, ship_size)
+while True:
+    # Place ships on the player's board
+    for ship_name, ship_size in ship_sizes.items():
+        display_board(player_board)
+        place_ship(player_board, ship_name, ship_size)
 
-# Initializes hit counters
-player_hits = 0
-computer_hits = 0
+    # Place ships on the computer's board
+    for ship_name, ship_size in ship_sizes.items():
+        random_place_ship(computer_board, ship_name, ship_size)
+
+    player_hits = 0
+    computer_hits = 0
 
 # Main game loop
 while True:
