@@ -368,3 +368,8 @@ or "H" for horizontal.
     <img src="assets/deployment/deploy-2.png">
 </details> 
 
+### Forking Github Repository
+1. Go to GitHub repository 
+2. Click on Fork button located in the top right corner
+3. [GitHub Repository](https://github.com/anthonyhaj/battleships-PP3)
+
