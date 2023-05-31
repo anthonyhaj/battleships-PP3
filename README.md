@@ -170,7 +170,20 @@ or "H" for horizontal.
     <img src="assets/screenshots/game-start-2.png">
 </details> 
 
+### Game display and moves
+- Displays player and computer board showing player ships and hiding computer ships
+- Misses are marked with '-' and hits marked with 'X'
+- Shows computer move after player has chosen a move
 
+<details>
+    <summary>Computer board screenshot</summary>
+    <img src="assets/screenshots/computer-board.png">
+</details> 
+
+<details>
+    <summary>Player board screenshot</summary>
+    <img src="assets/screenshots/player-board.png">
+</details> 
 
 
 
