@@ -1,7 +1,7 @@
 # BattleShips Game
 
 # Imports
-import random
+import random 
 
 # Game board size
 board_size = 10
@@ -193,6 +193,14 @@ for ship_name, ship_size in ship_sizes.items():
     display_board(player_board)
     place_ship(player_board, ship_name, ship_size)
 
+# Welcome message and play prompt
+print("Welcome to Battleship Game!")
+
+play = input("Would you like to play? (Y/N): ")
+if play.upper() != 'Y':
+    print("Maybe next time!")
+    exit()
+
 # Place ships on the computer's board
 for ship_name, ship_size in ship_sizes.items():
     random_place_ship(computer_board, ship_name, ship_size)
@@ -201,7 +209,7 @@ for ship_name, ship_size in ship_sizes.items():
 player_hits = 0
 computer_hits = 0
 
-# Game loop
+# Main game loop
 while True:
     print('\nPlayer Board')
     display_board(player_board, hide_ships=False)
