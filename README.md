@@ -2,7 +2,7 @@
 
 **Developer: Anthony Haj Ibrahim**
 
-[Visit live website](https://anthonyhaj.github.io/rock-paper-scissors-PP2/)
+[Visit live website](https://battleships-game-pp3.herokuapp.com/)
 
 ![Mockup image](assets/deployment/mockup-image.png)
 
