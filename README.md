@@ -291,3 +291,13 @@ or "H" for horizontal.
 </details>  
 
 
+8. I want to be able to play again
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Would you like to play again | Type Y/N | Y: resets game / N: Thank you for playing! | Works as expected
+
+<details>
+    <summary>Play again screenshot</summary>
+    <img src="assets/screenshots/play-again.png">
+</details> 
