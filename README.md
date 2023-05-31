@@ -6,7 +6,7 @@
 
 ## Table of Contents
 - [Project Goals](#project-goals)
-    - [User Stories](#user-stories)
+    - [User Goals](#user-goals)
     - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
     - [Target Audience](#target-audience)
@@ -40,7 +40,7 @@
 ## Project Goals
   - The goal of this project was to create a battleships game where the player plays against the computer
 
-### User Stories
+### User Goals
 - Play battleships
 - Be able to choose if user would like to play
 - Be able to see where a user has placed their battleships
@@ -122,7 +122,7 @@ or "H" for horizontal.
 
 ### Site Owner
 5. I want users to be able to enter correct coordinates
-6. I want users to be able to see which cells have been used or hit
+6. I want users to be able to know when they have used the name coordinate
 7. I want users to know how coordinates should be entered and validated
 8. I want users to be able to choose if they would like to start playing
 
@@ -252,6 +252,17 @@ or "H" for horizontal.
 | Coordinate validation | Type coordinate (e.g A10) | Invalid target. Please try again | Works as expected
 
 <details>
-    <summary>Play again screenshot</summary>
+    <summary>Invalid target screenshot</summary>
     <img src="assets/screenshots/invalid.png">
 </details> 
+
+6. I want users to be able to know when they have used the name coordinate
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Coordinate validation | Type coordinate (e.g A10) | You already targeted this cell | Works as expected
+
+<details>
+    <summary>You already targeted this cell screenshot</summary>
+    <img src="assets/screenshots/used.png">
+</details>  
