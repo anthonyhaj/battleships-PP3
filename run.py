@@ -196,10 +196,19 @@ for ship_name, ship_size in ship_sizes.items():
 # Welcome message and play prompt
 print("Welcome to Battleship Game!")
 
-play = input("Would you like to play? (Y/N): ")
-if play.upper() != 'Y':
-    print("Maybe next time!")
-    exit()
+while True:
+    play = input("Would you like to play? (Y/N): ")
+    play = play.upper()
+    if play == 'Y':
+        # Start the game
+        print("Let's start the game!")
+        break
+    elif play == 'N':
+        # Exit the game
+        print("Maybe next time!")
+        exit()
+    else:
+        print("Invalid input. Please enter 'Y' or 'N'.")
 
 # Place ships on the computer's board
 for ship_name, ship_size in ship_sizes.items():

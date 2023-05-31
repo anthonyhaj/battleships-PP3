@@ -37,7 +37,7 @@
 - [Credits](#credits)
     - [Content](#content)
     - [Code](#code)
-- [Thank You](#thank-you)
+- [Acknowledgements](#acknowledgements)
 
 ## Project Goals
   - The goal of this project was to create a battleships game where the player plays against the computer
@@ -47,4 +47,8 @@
 - Be able to choose if user would like to play
 - Be able to see where a user has placed their battleships
 - Be able to see opponents board and where the user has targeted
+
+### Site Owner Goals
+- To make a game that is easy to understand
+- To 
 
