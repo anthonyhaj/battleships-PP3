@@ -1,8 +1,10 @@
+# Battleships Game
 
+**Developer: Anthony Haj Ibrahim**
 
+[Visit live website](https://anthonyhaj.github.io/rock-paper-scissors-PP2/)
 
-
-
+![Mockup image](assets/deployment/mockup-image.png)
 
 ## Table of Contents
 - [Project Goals](#project-goals)
