@@ -114,6 +114,17 @@ or "H" for horizontal.
 
 </details>
 
+## User Stories
+
+### Users
+- I want to be able to choose where to put my battleships
+- I want to be able to see my game board and ships
+- I want to be able to see the opponents board
+- I want to be able to play again
+
+
+
+
 
 
 
