@@ -328,6 +328,18 @@ or "H" for horizontal.
 | Computer-controlled opponent hits the same target multiple times | Modified the computer_turn function to generate random coordinates until an untargeted cell is found|
 | Missing validation for the target coordinate input | Implemented the validate_coordinate function to validate the target coordinate input for both the player and computer-controlled opponent's turns. It ensures that the entered coordinate is in the correct format and within the valid range|
 
+## Deployment
 
+### Deploying in Heroko:
+1. Create new app and add an app name
+2. Select region then click on "create app"
+3. Open settings and scroll to Config vars
+4. Add PORT with key of 8000
+5. Next scroll down to buildpacks in settings
+6. Add python pack first
+7. Add Nodejs next
 
-
+<details>
+    <summary>Buildpacks screenshot</summary>
+    <img src="assets/deployment/buildpacks.png">
+</details> 
