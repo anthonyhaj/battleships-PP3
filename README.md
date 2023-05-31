@@ -107,6 +107,12 @@ or "H" for horizontal.
 - If the computer hits all players battleship cells they will revieve the message 
 "Game Over! The computer sank all your ships."
 
+#### Restart game
+- Once the game is over user is asked whether the would like to play again Y/N
+- If user selects "Y" the game will reset the game
+- If user selects "N" the game will exit with a goodbye message
+
+</details>
 
 
 
