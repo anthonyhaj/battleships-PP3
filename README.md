@@ -141,7 +141,19 @@ or "H" for horizontal.
 - [Heroku](https://www.heroku.com/)
 - [Pycharm](https://www.jetbrains.com/pycharm/)
 
+### 3rd Party Python Libraries used
 
+
+## Features
+
+### Welcome to battleships
+- Welcome the user to the game
+- Promts Y/N to start playing the game
+
+<details>
+    <summary>Welcome to game screenshot</summary>
+    <img src="assets/screenshots/welcome.png">
+</details>  
 
 
 
